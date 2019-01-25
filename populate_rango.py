@@ -8,7 +8,7 @@ from rango.models import Category, Page
 def populate():
     python_pages = [
         {"title": "Official Python Tutorial",
-         "url":"http://does.python.org/2/tutorial/",
+         "url":"http://docs.python.org/2/tutorial/",
          "views":6},
         {"title":"How to Think like a Computer Scientist",
          "url":"http://www.greenteapress.com/thinkpython/",
