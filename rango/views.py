@@ -12,7 +12,7 @@ def index(request):
     return render(request, 'rango/index.html', context_dict)
 
 def about(request):
-    return render(request, 'rango/about.html')
+    return render(request, 'rango/about.html', {})
 
 def show_category(request, category_name_slug):
     context_dict = {}
@@ -53,7 +53,7 @@ def add_page(request, category_name_slug):
 				page.category = category
 				page.views = 0
 				page.save()
-				return show_category(request, category_name_slug)
+			return show_category(request, category_name_slug)
 		else:
 			print(form.errors)
 			
